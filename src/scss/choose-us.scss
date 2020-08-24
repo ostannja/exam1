@@ -1,0 +1,105 @@
+.choose-us {
+  width: 100vw;
+  background-image: url(../../dist/img/back2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  padding: 6vw 8vw 6vw;
+  display: flex;
+  justify-content: space-between;
+
+  &__content {
+    width: 20vw;
+  }
+
+  &__text-wrapper {
+    margin: 62px auto 48px;
+  }
+
+  &__photo-wrapper {
+    &--left {
+      margin-left: 25%;
+
+    }
+
+    &--right {
+      margin-right: 25%;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__photo {
+    width: 40vw;
+    @include flex(space-between, center, column, nowrap);
+  }
+
+}
+
+.photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  width: 45vw;
+  padding-top: 9vh;
+
+  &__title {
+    font-family: Aleo;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 0.9;
+    text-align: left;
+    color: #ffffff;
+
+    &--tourist {
+      text-align: center;
+      padding-bottom: 15vh;
+      padding-top: 15vh;
+    }
+  }
+
+  &__text {
+    font-family: JosefinSans;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #e8e8e8;
+  }
+
+  &__paragraph {
+    padding-bottom: 20px;
+  }
+}
+
+.button {
+  width: 300px / 1770px *100vw;
+  height: 6vh;
+  background-color: #5474fd;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #ffffff;
+  }
+
+  &__text {
+    font-family: Aleo;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: #ffffff;
+    height: 100%;
+    text-transform: uppercase;
+    @include flex(center, center, row, nowrap);
+  }
+
+  &--booking {
+    width: 35%;
+  }
+}

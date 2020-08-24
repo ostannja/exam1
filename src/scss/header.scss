@@ -1,0 +1,163 @@
+.header {
+  &__background {
+    width: 100vw;
+    height: 100vh;
+    @include backgr(url(../../dist/img/back1.webp));
+    @extend %backgr;
+    background-position: left;
+  }
+
+  &__content {
+    padding-top: 35vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: JosefinSans;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 0.54;
+    letter-spacing: 6px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    padding-top: 2vh;
+    font-family: JosefinSans;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.18;
+    letter-spacing: 3.75px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 6.75vh;
+  }
+
+  &__form {
+    width: 50.7vw;
+    height: 6vh;
+    background-color: #fff;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__scroll {
+    margin-top: 16.2vh;
+    font-family: JosefinSans;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.86;
+    letter-spacing: 2.8px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__nav {
+    background-color: #5474fd;
+    padding: 0 8.64vw;
+  }
+
+  &__animation {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+
+  &__input {
+    border: none;
+    width: 76%;
+    text-align: center;
+    font-family: JosefinSans;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.86;
+    letter-spacing: 2.8px;
+    text-align: center;
+    color: #999999;
+    @include flex(center, center, row, wrap);
+  }
+
+  &__button {
+    border: solid 2px #ffffff;
+    background-color: #5474fd;
+    height: 6vh;
+    width: 23%;
+    font-family: Aleo;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.86;
+    letter-spacing: 1.4px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    @include flex(center, center, row, nowrap);
+  }
+
+  &__search-text {
+    height: 100%;
+    width: 100%;
+    @include flex(center, center, row, wrap);
+  }
+
+  &__search-icon {
+    height: 100%;
+    @include flex(center, center, row, wrap);
+  }
+}
+
+.nav {
+  width: 100vw;
+  @include flex(space-between, center, row, nowrap);
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: #ffffff;
+
+  &__title {
+    font-family: JosefinSans;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.08;
+    letter-spacing: 2.4px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__items {
+    width: 50.66%;
+    font-family: Aleo;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.86;
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 15vw;
+    @include flex(space-between, center, row, nowrap);
+
+  }
+
+  &__item:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 0.3s ease-in;
+  }
+}
+
+.scroll {
+  text-align: center;
+
+  &__down {
+    fill: #ffffff;
+    width: 15px;
+    height: 9px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,260 @@
+@media all {
+  .header {
+    &__title {
+      font-size: calc(27px + (11 + 11 * 0.7) *((100vw - 320px) / 1280));
+    }
+
+    &__subtitle {
+      font-size: calc(17px + (5 + 5 * 0.7) *((100vw - 320px) / 1280));
+    }
+  }
+
+  .card {
+    &__text {
+      font-size: calc(8px + (8 + 8 * 0.7) *((100vw - 320px) / 1280));
+    }
+
+    &__title {
+      font-size: calc(7px + (13 + 13 * 0.7) *((100vw - 320px) / 1280));
+    }
+  }
+
+  .nav {
+    &__items {
+      font-size: calc(7px + (7 + 7 * 0.7) *((100vw - 320px) / 1280));
+    }
+
+    &__title {
+      font-size: calc(17px + (7 + 7 * 0.7) *((100vw - 320px) / 1280));
+    }
+  }
+
+  .form {
+    &__input {
+      font-size: calc(10px + (4 + 4 * 0.7) *((100vw - 320px) / 1280));
+    }
+
+    &__button {
+      font-size: calc(7px + (7 + 7 * 0.7) *((100vw - 320px) / 1280));
+    }
+
+  }
+
+  .item__text {
+    font-size: calc(18px + (18 + 18 * 0.7) *((100vw - 320px) / 1280));
+  }
+
+  .button__text {
+    font-size: calc(8px + (8 + 8 * 0.7) *((100vw - 320px) / 1280));
+  }
+
+  .content__title {
+    font-size: calc(25px + (23 + 18 * 0.7) *((100vw - 320px) / 1280));
+  }
+
+}
+
+@media all and (max-width: 1199px) {
+  .double-card {
+    @include flex(center, center, column, wrap);
+    width: 70vw;
+
+    &__photo-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  .tourist__wrapper {
+    @include flex(space-between, center, column, nowrap);
+    padding-bottom: 5vh;
+  }
+
+  .content__title--tourist {
+    padding: 5vh;
+  }
+
+  photo {
+    margin: 0;
+  }
+
+  .choose-us {
+    &__photo {
+      justify-content: center;
+      width: 30vw;
+    }
+  }
+
+  .card__wrapper {
+    padding: 5% 5.55% 5%;
+  }
+}
+
+@media all and (max-width: 991px) {
+
+  .nav {
+    &__items {
+      height: 8vh;
+      letter-spacing: 3.5px;
+      @include flex(space-between, stretch, row, wrap);
+    }
+  }
+
+  .choose-us {
+    &__photo {
+      justify-content: center;
+      width: 30vw;
+    }
+
+    &__photo-wrapper {
+      &--left {
+        margin-left: 0;
+
+      }
+
+      &--right {
+        margin-right: 0;
+      }
+    }
+
+  }
+
+  .content {
+    padding-top: 0;
+  }
+
+  .button {
+    height: auto;
+  }
+
+  .footer__wrapper {
+    padding-top: 3vh;
+  }
+
+  .footer__items {
+    width: 18vh;
+  }
+
+  .double-card__photo-wrapper {
+    padding-top: 5vh;
+    background-color: #232323;
+  }
+}
+
+@media all and (max-width: 680px) {
+  ::placeholder {
+    color: #ffffff;
+    display: none;
+    @include flex(center, center, row, wrap);
+  }
+
+  .form__new-text {
+    @include flex(flex-start, center, row, wrap);
+  }
+
+  .form__new-text::before {
+    position: absolute;
+    display: inline-block;
+    font-size: 30px;
+    padding-left: 10px;
+    content: "Search Your Travel...";
+    font-family: JosefinSans;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.86;
+    letter-spacing: 2.8px;
+    text-align: center;
+    color: #999999;
+  }
+
+  .choose-us {
+    &__content {
+      width: 50vw;
+      margin-bottom: 2vh;
+    }
+  }
+
+  .choose-us {
+    flex-direction: column;
+    padding-bottom: 7.5%;
+
+    &__content {
+      width: 100%;
+      margin: 2%;
+    }
+
+    &__photo {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__photo-wrapper {
+      margin: 2%;
+    }
+  }
+
+  .button--choose-us {
+    @include flex(center, center, row, nowrap);
+    margin: 0 auto;
+    padding: 1%;
+  }
+
+  .form__search-text {
+    display: none;
+  }
+
+  .nav {
+    &__items {
+      height: 9vh;
+      letter-spacing: 4px;
+      @include flex(space-between, center, column, nowrap);
+    }
+  }
+
+  .content__title--choose-us {
+    position: absolute;
+    right: 30%;
+  }
+
+  .item {
+    width: 30%;
+  }
+
+  .button {
+    width: auto;
+  }
+
+  .photo-t {
+    max-width: 90%;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .item {
+    &__icon {
+      margin-bottom: 5px;
+
+      &--search,
+      &--check,
+      &--nice {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .form__new-text::before {
+    padding-left: 10%;
+    content: "Search...";
+  }
+
+  .card__wrapper {
+    padding: 5px;
+  }
+
+  .card--spain {
+    width: 55vw;
+  }
+}

@@ -1,0 +1,24 @@
+.tourist {
+  width: 100vw;
+  @include backgr(url(../../dist/img/back5.webp));
+  @extend %backgr;
+
+  &__wrapper {
+    padding-bottom: 10vw;
+  }
+}
+
+.content__title--tourist {
+  padding: 15vh;
+}
+
+.double-card {
+  width: 90vw;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+
+  &__photo-wrapper {
+    width: 130%;
+  }
+}

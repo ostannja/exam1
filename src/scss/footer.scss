@@ -1,0 +1,63 @@
+.footer {
+  width: 100vw;
+  background-color: #232323;
+
+  &__wrapper {
+    padding-top:
+      15vh;
+    padding-bottom: 3vh;
+    @include flex(space-between, center, column, nowrap);
+  }
+
+  &__copyright {
+    height: 7vh;
+    @include flex(space-between, center, column,
+      nowrap);
+  }
+
+  &__title {
+    font-family: JosefinSans;
+    font-size: 24px;
+    font-weight:
+      bold;
+    line-height: 1.08;
+    letter-spacing: 3.36px;
+    color: #ffffff;
+    text-transform:
+      uppercase;
+  }
+
+  &__subtitle {
+    font-family: JosefinSans;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    letter-spacing: 1.6px;
+    text-align:
+      center;
+    color: #ffffff;
+  }
+
+  &__items {
+    width: 15vw;
+    padding-top: 4vh;
+    padding-bottom: 3vh;
+  }
+}
+
+.socials {
+  @include flex(space-between, center, row, nowrap);
+
+  &__item {
+    color: white;
+
+    &:hover {
+      transform: scale(1.5, 1.5);
+      transition: all 0.2s ease-in;
+    }
+
+    &--linkedin {
+      color: #5474fd;
+    }
+  }
+}

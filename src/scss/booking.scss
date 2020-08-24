@@ -1,0 +1,79 @@
+.booking {
+  width: 100vw;
+  @include backgr(url(../../dist/img/back3.webp));
+  @extend %backgr;
+
+  &--2 {
+    @include backgr(url(../../dist/img/back4.webp));
+  }
+
+  &__card {
+    padding: 18vw 0px 6vw 10vw;
+
+    &--2 {
+      padding: 18vw 0px 6vw 40vw;
+    }
+
+  }
+
+
+}
+
+.card {
+  background-color: #232323;
+
+  &--spain {
+    opacity: 0.9;
+    width: 49.5vw;
+    height: 30vw;
+  }
+
+  &--tourist {
+    width: 70%;
+    height: auto;
+  }
+
+
+  &__wrapper {
+    padding: 9% 5.55% 9%;
+    width: 100%;
+    height: 100%;
+    @include flex(space-around, flex-start, column, nowrap);
+
+    &--tourist {
+      padding: 3vh 3.5% 3vh;
+      height: 100%;
+      width: auto;
+      // @include flex(center, center, column, nowrap);
+    }
+  }
+
+  &__country {
+    font-family: JosefinSans;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.3;
+    letter-spacing: 1.5px;
+    text-align: left;
+    color: #e8e8e8;
+  }
+
+  &__title {
+    font-family: JosefinSans;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.2;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: JosefinSans;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    text-align: left;
+    color: #e8e8e8;
+  }
+}

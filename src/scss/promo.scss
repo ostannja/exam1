@@ -1,0 +1,49 @@
+.promo {
+  background-color: #333333;
+  width: 100vw;
+
+  &__items {
+    @include flex(space-between, center, row, nowrap);
+    padding: 6vw 12.5vw 8vw;
+  }
+
+  &__item {
+    width: 12vw;
+  }
+}
+
+.item {
+  @include flex(space-between, center, column, nowrap);
+
+  &__icon {
+    margin-bottom: 31px;
+
+    &--search {
+      fill: #5474fd;
+      width: 58px;
+      height: 57px;
+    }
+
+    &--check {
+      fill: #ff6363;
+      width: 60px;
+      height: 61px;
+    }
+
+    &--nice {
+      fill: #00a2ff;
+      width: 62px;
+      height: 59px;
+    }
+  }
+
+  &__text {
+    font-family: Aleo;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1;
+    text-align: center;
+    color: #e8e8e8;
+
+  }
+}
